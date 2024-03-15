@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 export const env = createEnv({
   server: {
-    BASE_URL: z.string().optional().default('hanjaemeo.vercel.app'),
+    BASE_URL: z.string().optional().default('hanjaemeo-web.vercel.app'),
     NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
     VERCEL_URL: z.string().optional(),
     PORT: z.coerce.number().optional().default(3000),
